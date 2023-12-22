@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { UserComponent } from './user/user.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  //templateUrl: './app.component.html',
-  template: `<h1>Angular App, Hola mundo</h1>`,
-  //styleUrl: './app.component.css'
-  styles: `
-    h1{
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  `
+  imports: [CommonModule, RouterOutlet, UserComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-app';
+  city = 'Barcelona';
 }
