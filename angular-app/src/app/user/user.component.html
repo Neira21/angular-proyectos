@@ -1,11 +1,16 @@
 <section>
   @if(isLogged){
     <h2>Bienvenido User: {{userName}}</h2>
-    <img
-      (click)="greetUser()"
-      alt="photo-github"
-      src="https://github.com/Neira21.png"
-    >
+    <div>
+      <img
+        (click)="greetUser()"
+        alt="photo-github"
+        src="https://github.com/Neira21.png"
+      >
+    </div>
+    <button (click)="isLogged=!isLogged" >
+      Cerrar Sesión
+    </button>
   } @else{
     <p>Iniciar Sesión</p>
     <button (click)="isLogged=!isLogged" >

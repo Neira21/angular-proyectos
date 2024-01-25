@@ -1,0 +1,15 @@
+section{
+  width: 500px;
+  line-height: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+
+}

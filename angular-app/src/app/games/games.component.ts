@@ -15,6 +15,7 @@ export class GamesComponent {
   fav(gameName:string){
     this.addFavorite.emit(gameName)
   }
+
   games=[
     {
       id: 1,

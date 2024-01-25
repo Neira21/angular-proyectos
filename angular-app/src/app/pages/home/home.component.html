@@ -1,0 +1,15 @@
+<p>Lista de Usuarios</p>
+
+
+@if(!cargando()){
+  @for (user of usuarios(); track user.id) {
+    <div>
+      <p> {{user.name}} - {{user.email}} </p>
+    </div>
+  } @empty {
+    <p>No se encontraron usuarios</p>
+  }
+} @else {
+  <img src="https://communities.apple.com/es/content/attachment/fe961f97-98c1-409f-8c32-1a11fd2eaee3" alt="cargando">
+}
+
