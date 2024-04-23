@@ -1,0 +1,10 @@
+<div class="container">
+
+  <app-tabla-cursos *ngIf="!cursos"></app-tabla-cursos>
+  <app-tabla-alumnos *ngIf="cursos"></app-tabla-alumnos>
+
+  <button class="btn btn-primary" (click)="handleCambio()" >
+    Cambiar Tabla
+  </button>
+
+</div>
